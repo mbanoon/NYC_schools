@@ -11,7 +11,7 @@ proj_lib = os.path.join(os.path.join(conda_dir, 'share'), 'proj')
 os.environ["PROJ_LIB"] = proj_lib
 
 import pandas as pd
-import geopandas as gpd
+import geopandas
 import altair as alt
 import streamlit as st
 import json
@@ -63,7 +63,7 @@ zipped['Native American'] = zipped['native_american_alaskan'] / zipped['total']
 # read the district map json file and convert to gdf
 with open('NYC_districts.json') as jsonfile:
     district_json = json.load(jsonfile)
-district_gdf = gpd.GeoDataFrame.from_features((district_json))
+district_gdf = geopandas.GeoDataFrame.from_features((district_json))
 
 # merge gdf with districts aggregated by sum and convert back to json
 districted_merged = district_gdf.merge(districted, on='schoolDistrict', how='inner')
@@ -73,7 +73,7 @@ districted_choro_data = alt.Data(values=districted_choro_json['features'])
 # read the zip code map json file and convert to gdf
 with open('NYC_zips.json') as jsonfile:
     zip_json = json.load(jsonfile)
-zip_gdf = gpd.GeoDataFrame.from_features((zip_json))
+zip_gdf = geopandas.GeoDataFrame.from_features((zip_json))
 
 # merge gdf with zip codes aggregated by sum and convert back to json
 zipped_merged = zip_gdf.merge(zipped, left_on='postalCode', right_on='zip', how='inner')
