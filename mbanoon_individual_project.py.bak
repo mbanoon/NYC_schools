@@ -7,7 +7,6 @@ import altair as alt
 import streamlit as st
 import json
 
-
 # title and some directions
 st.title("Racial Composition of NYC Public Schools, 2015-16")
 st.write("By Mohamed Banoon")
