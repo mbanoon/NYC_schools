@@ -1,6 +1,5 @@
 altair-data-server==0.4.1
 altair-saver==0.5.0
-altair-viewer @ file:///home/conda/feedstock_root/build_artifacts/altair_viewer_1636219261993/work
 argon2-cffi @ file:///C:/ci/argon2-cffi_1613037869401/work
 astor==0.8.1
 async-generator @ file:///home/ktietz/src/ci/async_generator_1611927993394/work
@@ -35,8 +34,6 @@ GDAL==3.0.2
 geopandas @ file:///tmp/build/80754af9/geopandas_1627401391374/work
 gitdb==4.0.9
 GitPython==3.1.26
-h11 @ file:///home/conda/feedstock_root/build_artifacts/h11_1609518832927/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1642433548627/work
 importlib-metadata @ file:///C:/ci/importlib-metadata_1638543082309/work
 ipykernel @ file:///C:/ci/ipykernel_1633545585502/work/dist/ipykernel-6.4.1-py3-none-any.whl
 ipython @ file:///C:/ci/ipython_1635944283918/work
@@ -76,7 +73,6 @@ numexpr @ file:///C:/ci/numexpr_1640704337920/work
 numpy @ file:///C:/ci/numpy_and_numpy_base_1634088717532/work
 olefile @ file:///Users/ktietz/demo/mc3/conda-bld/olefile_1629805411829/work
 openpyxl==3.0.9
-outcome @ file:///home/conda/feedstock_root/build_artifacts/outcome_1606397708505/work
 packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
 pandas @ file:///C:/ci/pandas_1641443174429/work
 pandocfilters @ file:///opt/conda/conda-bld/pandocfilters_1643405455980/work
@@ -84,7 +80,6 @@ parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
 Pillow==8.4.0
 ply==3.11
-portpicker @ file:///home/conda/feedstock_root/build_artifacts/portpicker_1636454835634/work
 prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1637050397234/work
 prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
 protobuf==3.19.4
@@ -94,7 +89,6 @@ pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
 pydeck==0.7.1
 Pygments @ file:///tmp/build/80754af9/pygments_1629234116488/work
 Pympler==1.0.1
-pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1643496850550/work
 pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
 pyproj @ file:///C:/ci/pyproj_1614278136705/work
 pyrsistent @ file:///C:/ci/pyrsistent_1636093225342/work
@@ -112,7 +106,6 @@ Rtree @ file:///C:/ci/rtree_1618421015405/work
 s3transfer==0.5.1
 scikit-learn @ file:///C:/ci/scikit-learn_1642617276183/work
 scipy @ file:///C:/ci/scipy_1641555170412/work
-selenium @ file:///home/conda/feedstock_root/build_artifacts/selenium_1641937238099/work/src/py
 Send2Trash @ file:///tmp/build/80754af9/send2trash_1632406701022/work
 Shapely==1.7.1
 sip==4.19.13
@@ -120,22 +113,17 @@ six @ file:///tmp/build/80754af9/six_1623709665295/work
 sklearn==0.0
 smmap==5.0.0
 sniffio @ file:///D:/bld/sniffio_1635844947979/work
-sortedcontainers @ file:///home/conda/feedstock_root/build_artifacts/sortedcontainers_1621217038088/work
 streamlit==0.67.0
 terminado==0.9.4
 testpath @ file:///tmp/build/80754af9/testpath_1624638946665/work
 threadpoolctl==3.0.0
 toml==0.10.2
-toolz @ file:///home/conda/feedstock_root/build_artifacts/toolz_1636177962100/work
 tornado @ file:///C:/ci/tornado_1606924294691/work
 traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
 trio @ file:///D:/bld/trio_1636214312588/work
-trio-websocket @ file:///home/conda/feedstock_root/build_artifacts/trio-websocket_1641849081899/work/dist
 tzdata==2021.5
 tzlocal==4.1
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1641584929973/work
 validators==0.18.2
-vega-datasets @ file:///home/conda/feedstock_root/build_artifacts/vega_datasets_1606414058616/work
 watchdog==2.1.6
 wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
 webencodings==0.5.1
