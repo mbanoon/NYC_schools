@@ -15,7 +15,7 @@ et-xmlfile==1.1.0
 Fiona==1.8.13.post1
 fonttools==4.25.0
 GDAL==3.0.2
-geopandas @ file:///tmp/build/80754af9/geopandas_1627401391374/work
+geopandas==0.9.0
 gitdb==4.0.9
 GitPython==3.1.26
 jmespath==0.10.0
