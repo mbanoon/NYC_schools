@@ -1,7 +1,7 @@
 # Mohamed Banoon
 # SI 649 W22 Individual Project
 
-% pip install geopandas
+!pip install geopandas
 import pandas as pd
 import geopandas as gpd
 import altair as alt
