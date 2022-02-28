@@ -1,10 +1,8 @@
 # Mohamed Banoon
 # SI 649 W22 Individual Project
 
-# Set up environment
-
 import pandas as pd
-import geopandas
+import geopandas as gpd
 import altair as alt
 import streamlit as st
 import json
@@ -56,7 +54,7 @@ zipped['Native American'] = zipped['native_american_alaskan'] / zipped['total']
 # read the district map json file and convert to gdf
 with open('NYC_districts.json') as jsonfile:
     district_json = json.load(jsonfile)
-district_gdf = geopandas.GeoDataFrame.from_features((district_json))
+district_gdf = gpd.GeoDataFrame.from_features((district_json))
 
 # merge gdf with districts aggregated by sum and convert back to json
 districted_merged = district_gdf.merge(districted, on='schoolDistrict', how='inner')
@@ -66,7 +64,7 @@ districted_choro_data = alt.Data(values=districted_choro_json['features'])
 # read the zip code map json file and convert to gdf
 with open('NYC_zips.json') as jsonfile:
     zip_json = json.load(jsonfile)
-zip_gdf = geopandas.GeoDataFrame.from_features((zip_json))
+zip_gdf = gpd.GeoDataFrame.from_features((zip_json))
 
 # merge gdf with zip codes aggregated by sum and convert back to json
 zipped_merged = zip_gdf.merge(zipped, left_on='postalCode', right_on='zip', how='inner')
@@ -81,7 +79,8 @@ options = ['properties.White/Asian:Q', 'properties.Minorities:Q', 'properties.Wh
 selectbox2 = st.sidebar.selectbox('Select Race', options, format_func=lambda x: x[11:-2])
 
 # add note about minorities
-st.sidebar.write('Note that the "Minorities" categroy excludes Asians.')
+st.sidebar.write("In an unsegregated world, we would not see drak dots on a light background or vice versa for any race. Everything would be homegeneous in that perfect world. However, we are not there yet. ")
+st.sidebar.write('Note that the "Minorities" categroy excludes Asians. They are included with whites.')
 
 # make the district choropleth
 district_choro = alt.Chart(districted_choro_data).mark_geoshape().encode(
